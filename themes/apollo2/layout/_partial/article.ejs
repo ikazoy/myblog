@@ -1,9 +1,11 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="post">
 	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-		</span>
-		<span class="meta-elements author"><%= config.author %></span>
+		<% if (typeof datedisp  == 'undefined') { datedisp = true;} %>
+		<% if (datedisp) {%>
+			<span class="meta-elements date">
+				<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+			</span>
+		<% } %>
 		<div class="commentscount">
 			<% if (post.comments && config.disqus_shortname){ %>
 				<a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
