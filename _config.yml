@@ -3,16 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: ikazoy.me
 subtitle:
 description:
-author: John Doe
+author: Yoshiki Ozaki
 language:
-timezone:
+  - ja
+  - en
+timezone: Japan
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://ikazoy.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -65,7 +67,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: apollo2
+theme: apollo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
