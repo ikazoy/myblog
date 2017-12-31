@@ -1,5 +1,5 @@
 ---
-title: Rails5をDockernizeする(MySQL + Spring + Sidekiq + Redis + docker-sync) for 開発環境
+title: Rails5の開発環境をDockernizeする(MySQL + Spring + Sidekiq + Redis + docker-sync)
 date: 2017-12-31 15:24:30
 categories:
   - development
