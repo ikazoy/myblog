@@ -85,8 +85,6 @@ ENTRYPOINT [ \
 - ENTRYKITの活用
 	- 参考サイトそのままですが、ENTRYKITを活用することで、起動時に必要な処理（ここでは `bundle install` や `yarn install`）などを完結に記述できます
 
-## config/
-
 ## docker-compose.yml
 
 ```
@@ -169,7 +167,7 @@ volumes:
 		```
 - 各種データストア, bundle, node_modulesの永続化
 	- busybox	imageを使って、永続化が必要なデータを隔離しています
-	- 新しいモジュールを追加しても、bundle installやyarn installの実行は短くて済みます
+	- 新しいモジュールを追加しても、bundle installやyarn installの実行は短い時間で済みます
 - springコンテナは不要だった
 	- 上記参考サイトにはspringコンテナが別途必要とのことだったのですが`bin/rails`や`bin/rake` 内にspringを読み込むコードがあれば、`docker-compose exec rails rails c`でSpring preloader経由で呼び出されました
 	- なぜだろう
@@ -197,7 +195,7 @@ Docker for Macにはファイルシステムのパフォーマンス上の[問�
 
 1. `cached`オプションの使用 [参考](https://github.com/docker/for-mac/issues/1592)
   - volumeマウント時にどのレベルでファイルの一貫性を要求するか、というオプションが設定されました
-  - 設定して試してみましたが私の環境では効果がなかったので、docker-syncを採用しました
+  - 設定して試してみましたが私の環境では大きな効果はなかったので、docker-syncを採用しました
 2. docker-sync
   - 上記の通り、docker-sync.ymlという設定ファイルに`rails-sync`という名前でdocker-sync用のvolumeを作成します
   - railsコンテナからは、`rails-sync` volumeをマウントします
