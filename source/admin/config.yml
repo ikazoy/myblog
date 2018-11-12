@@ -3,7 +3,11 @@ backend:
   repo: ikazoy/myblog
   branch: master
 
-media_folder: source/images/
+# media_folder: source/images/
+media_library:
+  name: uploadcare
+  config:
+    publicKey: f471c0e457ae72e43871
 
 collections:
 - name: "blog" # Used in routes, e.g. /admin/collections/blog
