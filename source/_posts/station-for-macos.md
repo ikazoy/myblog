@@ -30,13 +30,12 @@ Stationにたくさんのアプリが統合できるとはいえ、それでもW
 4. 目的のアプリの名前を入れる（例：`Slack`)
 
 ## こうしたい
+
 1. Webブラウザを開いている状態
 2. ショートカットキー（ホットキー）を入力するとQuick Switchを開いた状態でStationが起動する
 3. 目的のアプリの名前を入れる（例：`Slack`)
 
-![station](/source/images/スクリーンショット 2018-11-12 17.15.10.png)
-
-![quickswitch](/source/images/スクリーンショット 2018-11-12 17.15.10.png)
+![quick-switch](/source/images/スクリーンショット 2018-11-12 17.15.10.png)
 
 1ステップ減りました！1日数十回使いそうなので重要。
 
@@ -48,26 +47,25 @@ AppleScriptをアプリケーション化して、ホットキーを割り当て
 
 1. スクリプトエディタを開く(アプリケーション→ユーティリティ）
 2. 下記のコードを貼り付ける
-
-    ```
-    -- https://stackoverflow.com/questions/4242437/applescript-how-do-i-launch-an-application-and-then-execute-a-menu-command
-    tell application "Station"
-        activate
-        tell application "System Events"
-            tell process "Station"
-                tell menu bar 1
-                    tell menu bar item "View"
-                        tell menu "View"
-                            click menu item "Show Quick-Switch"
-                        end tell
-                    end tell
-                end tell
-            end tell
-        end tell
-    end tell
-    ```
+   ```
+   -- https://stackoverflow.com/questions/4242437/applescript-how-do-i-launch-an-application-and-then-execute-a-menu-command
+   tell application "Station"
+       activate
+       tell application "System Events"
+           tell process "Station"
+               tell menu bar 1
+                   tell menu bar item "View"
+                       tell menu "View"
+                           click menu item "Show Quick-Switch"
+                       end tell
+                   end tell
+               end tell
+           end tell
+       end tell
+   end tell
+   ```
 3. ファイル→書き出す→ファイルフォーマット：アプリケーションを選択→保存
-    - アプリケーションの名前は`quick-switch-Station`などご自由に設定ください。
+   * アプリケーションの名前は`quick-switch-Station`などご自由に設定ください。
 
 ※スクリプトエディタからAppleScriptを実行するには、OSのシステム環境設定→セキュリティとプライバシー→アクセシシビリティから許可を与える必要があります。
 
@@ -84,5 +82,3 @@ AppleScriptをアプリケーション化して、ホットキーを割り当て
 ![clcl設定](/source/images/スクリーンショット 2018-11-12 17.49.22.png)
 
 ユーザーではないので試してないですが、Alfredなどを使っても便利でしょう。
-
-
