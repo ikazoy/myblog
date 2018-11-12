@@ -1,9 +1,14 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-  About me: /about
-  English blog: 'https://en.ikazoy.me'
+  Home:
+    path: /
+  Archives:
+    path: /archives
+  About me:
+    path: /about
+  English blog:
+    open_new_tab: true
+    path: 'https://en.ikazoy.me'
 rss: /atom.xml
 
 # Content

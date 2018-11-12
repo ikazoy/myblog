@@ -3,13 +3,20 @@
 </div>
 <header id="header">
 	<h1 class="blog-title">
-		<a href="<%- config.root %>"><%= config.title %></a>
+		<a href="<%- config.root %>">
+			<%= config.title %></a>
 	</h1>
 	<nav class="nav">
 		<ul>
-			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
+			<% for (var m in theme.menu){ %>
+			<% var target = (theme.menu[m].open_new_tab) ? '_blank' : '_self' %>
+			<li><a href="<%- theme.menu[m].path %>" target="<%- target %>">
+					<%=m %></a></li>
+			<% } %>
 			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<% if (theme.rss){ %><li><a href="<%- theme.rss %>" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li><% } %>
+			<% if (theme.rss){ %>
+			<li><a href="<%- theme.rss %>" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+			<% } %>
 		</ul>
 	</nav>
 	<div id="search-form-wrap">
