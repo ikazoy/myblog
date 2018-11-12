@@ -72,3 +72,11 @@ theme: apollo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# emoji
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
