@@ -35,9 +35,9 @@ Stationにたくさんのアプリが統合できるとはいえ、それでもW
 2. ショートカットキー（ホットキー）を入力するとQuick Switchを開いた状態でStationが起動する
 3. 目的のアプリの名前を入れる（例：`Slack`)
 
-![quick-switch](/source/images/スクリーンショット 2018-11-12 17.15.10.png)
+![quick switch](https://ucarecdn.com/2fb324e7-a6d8-498c-b441-d7b7fcb09e39/)
 
-1ステップ減りました！1日数十回使いそうなので重要。
+1ステップ減りました :tada: 1日数十回使いそうなので重要。
 
 # どうやるか
 
@@ -77,8 +77,8 @@ AppleScriptをアプリケーション化して、ホットキーを割り当て
 
 お好きな方法で`quick-switch-Station`を起動できるように設定すればよいです。
 
-私は[CLCL](https://itunes.apple.com/jp/app/clcl-lite/id495511246?mt=12)を使って、optionキー2回押しで、`quick-switch-Station`が起動するように設定しております。
+私は[CLCL](https://itunes.apple.com/jp/app/clcl-lite/id495511246?mt=12)を使って、optionキー2回押しで、`quick-switch-Station`が起動するように設定しています。
 
-![clcl設定](/source/images/スクリーンショット 2018-11-12 17.49.22.png)
+![clcl setting](https://ucarecdn.com/87d9d3b4-c6c8-489d-ab16-5a3a20cc0866/)
 
 ユーザーではないので試してないですが、Alfredなどを使っても便利でしょう。
